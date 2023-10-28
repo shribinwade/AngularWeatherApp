@@ -1,0 +1,24 @@
+
+
+<div class="container ">
+
+
+    <div class="card text-bg-primary mb-3 position-absolute top-50 start-50 translate-middle" style="max-width: 18rem;">
+       <form class="form-control"  (submit)="onSubmbit()">
+        <input class="form-control p-2" name="cityName" [(ngModel)]="cityName" type="text" placeholder="Search City">
+       </form>
+        <div class="card-header text-center">
+            <h2>{{name | uppercase}}</h2>
+            <p><img src="{{iconURL}}"></p>
+        </div>
+        <div class="card-body">
+            
+            <p class="card-text">Summary: {{summary}}</p>
+            <p class="card-text">Temprature: {{temp | number: '1.0-0'}}°C</p>
+            <p class="card-text">Pressure: {{pressure}} hPa</p>
+            <p class="card-text">Humidity: {{humidity}} %</p>
+        </div>
+
+
+
+    </div>
